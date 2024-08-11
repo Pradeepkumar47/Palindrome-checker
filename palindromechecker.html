@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="palindrome.css">
+    <title>JS INTRO</title>
+</head>
+<body>
+<div class="lencontainer">
+        <h1 id="h1">Palindrome Checker</h1>
+        <div class="input-div">
+            <input type="text" id="input" placeholder="Enter">
+        </div>
+        <div >
+            <button  type="submit" onclick="Calculate()">CALCULATE</button>
+        </div>     
+    <div id="result">
+        
+    </div>
+        </div>
+    <!--<h1 id="h1">hello world</h1>
+    <button onclick="change()">change</button>
+    <h2 id="id">hello</h2>-->
+
+</body>
+    <script>
+function Calculate(){
+        //  const month=Number(document.getElementById("input").value)
+        //  let rate=0
+        //  if (month<3)
+        //     rate=5.8
+        // else if(month>=3&&month<=6)
+        //     rate=6.5
+        // else if(month>=7&&month<=9)
+        //     rate=6.8
+        // else if(month>=10)
+        //     rate=7
+        //  let result=document.getElementById("result")
+        //  result.innerHTML=rate+"% Rate"
+        let str=(document.getElementById("input").value)
+        let str2=str.reverse
+        let str3=("")
+        if(str==str2)
+            str3="Palindrome"
+        else
+            str3="Not Palindrome"
+            let result=document.getElementById("result")
+            result.innerHTML=str3
+    
+    
+    
+    }
+    </script>
+</body> 
+</html>
